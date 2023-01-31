@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Contact, ContactData, CurrentUserData } from '../../types';
-import { getContacts, getActiveChats } from '../handlers';
+import { getContacts, getActiveChats } from '../handlers/home';
 import { useDispatch } from 'react-redux';
 import { setActiveChats } from '../features';
 import { setContacts, setCurrentChat } from '../features/chats';

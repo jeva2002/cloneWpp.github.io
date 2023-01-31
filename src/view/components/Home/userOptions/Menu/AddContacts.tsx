@@ -3,7 +3,7 @@ import TextField from '../../../common/TextField';
 import { NewContact } from '../../../../../types';
 import { VALIDATE_ADD_CONTACT } from '../../../../../model/validations';
 import Button from 'react-bootstrap/Button';
-import { addContactHandler } from '../../../../../controller/handlers';
+import { addContactHandler } from '../../../../../controller/handlers/home';
 import { useSelector } from 'react-redux';
 import { getOne } from '../../../../../model/db/services';
 import { getCurrentUser } from '../../../../../controller/features/currentUser';

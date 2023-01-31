@@ -1,8 +1,8 @@
 import { FirebaseError } from 'firebase/app';
 import Swal from 'sweetalert2';
-import { collections, queryOperators, usersCollection } from '../../model/db/config';
-import { getOne, getWithQuery, update } from '../../model/db/services';
-import { NewContact } from '../../types';
+import { collections, queryOperators, usersCollection } from '../../../model/db/config';
+import { getOne, getWithQuery, update } from '../../../model/db/services';
+import { NewContact } from '../../../types';
 
 const validateCurrentUser = (values: NewContact, currentUser: any) => {
   if (currentUser.cel && currentUser.contacts) {

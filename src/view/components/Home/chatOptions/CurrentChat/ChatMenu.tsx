@@ -4,7 +4,7 @@ import clip from '../../../../../assets/icons/paperclip.svg';
 import mic from '../../../../../assets/icons/mic.svg';
 import send from '../../../../../assets/icons/send.svg';
 import FormControl from 'react-bootstrap/FormControl';
-import { createNewChat, sendMessage } from '../../../../../controller/handlers';
+import { createNewChat, sendMessage } from '../../../../../controller/handlers/home';
 import { useSelector } from 'react-redux';
 import { getCurrentUser } from '../../../../../controller/features/currentUser';
 import Swal from 'sweetalert2';

@@ -3,9 +3,9 @@ import {
   collections,
   queryOperators,
   usersCollection,
-} from '../../model/db/config';
-import { getOne, getWithQuery } from '../../model/db/services';
-import { ContactData } from '../../types';
+} from '../../../model/db/config';
+import { getOne, getWithQuery } from '../../../model/db/services';
+import { ContactData } from '../../../types';
 
 const getContact = async (cel: number) => {
   const contact: any = await getWithQuery(
@@ -27,7 +27,7 @@ const getContact = async (cel: number) => {
 export const getContacts = (contacts: number[]) => {
   const contactsList = contacts.map(async (e) => await getContact(e));
   const result = Promise.all(contactsList).then((contacts) => {
-    return contacts.map((contact, index) => {
+    return contacts.map((contact) => {
       if (contact) {
         const formatedContact: ContactData = {
           id: contact?.id,

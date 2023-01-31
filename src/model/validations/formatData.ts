@@ -1,7 +1,7 @@
 import { DocumentData } from "firebase/firestore";
 import { CurrentUserData } from "../../types";
 
-export const formatCurrentUser = (doc: DocumentData | undefined, id: string) => {
+export const formatCurrentUser = (doc: unknown | undefined, id: string) => {
   if (doc) {
     const user: any = { ...doc };
     const formatedUser: CurrentUserData = {

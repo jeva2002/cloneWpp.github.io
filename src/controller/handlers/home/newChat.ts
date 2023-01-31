@@ -1,7 +1,7 @@
 import { DateTime } from 'luxon';
-import { chatsCollection, collections } from '../../model/db/config';
-import { createDoc, getOne, update } from '../../model/db/services';
-import { NewChat, UpdateUser } from '../../types';
+import { chatsCollection, collections } from '../../../model/db/config';
+import { createDoc, getOne, update } from '../../../model/db/services';
+import { NewChat, UpdateUser } from '../../../types';
 
 const updateUserChats = async (participantId: string, chatId: string) => {
   const user = await getOne(collections.users, participantId);

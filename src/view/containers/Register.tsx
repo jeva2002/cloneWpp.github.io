@@ -1,6 +1,6 @@
 import { Formik } from 'formik';
 import RegisterForm from '../components/Register/RegisterForm';
-import { handleRegister } from '../../controller/handlers';
+import handleRegister from '../../controller/handlers/register';
 import { VALIDATE_REGISTER } from '../../model/validations';
 import { NewUser } from '../../types';
 
@@ -20,8 +20,7 @@ const Register: React.FunctionComponent = (props) => {
       initialValues={INITIAL_VALUES}
       validationSchema={VALIDATE_REGISTER}
       onSubmit={async (values, actions) => {
-        await handleRegister(values);
-        actions.resetForm();
+        await handleRegister(values, actions);
       }}
     >
       <main

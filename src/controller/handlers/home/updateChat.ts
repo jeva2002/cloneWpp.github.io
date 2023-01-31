@@ -1,8 +1,8 @@
 import { FirebaseError } from 'firebase/app';
 import Swal from 'sweetalert2';
-import { collections } from '../../model/db/config';
-import { getOne, update } from '../../model/db/services';
-import { ContactData, Message } from '../../types';
+import { collections } from '../../../model/db/config';
+import { getOne, update } from '../../../model/db/services';
+import { ContactData, Message } from '../../../types';
 import { DateTime } from 'luxon';
 
 export const sendMessage = async (

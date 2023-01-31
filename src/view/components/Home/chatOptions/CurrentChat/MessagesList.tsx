@@ -1,4 +1,4 @@
-import { deleteMessage } from '../../../../../controller/handlers';
+import { deleteMessage } from '../../../../../controller/handlers/home';
 import { ContactData, Message as IMessage } from '../../../../../types';
 import Message from './Message/Message';
 

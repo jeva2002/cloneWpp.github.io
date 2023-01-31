@@ -1,7 +1,7 @@
 import { Form, Formik } from 'formik';
 import Button from 'react-bootstrap/Button';
 import { useSelector } from 'react-redux';
-import { updateCurrentUser } from '../../../../../controller/handlers';
+import { updateCurrentUser } from '../../../../../controller/handlers/home';
 import { CurrentUserData } from '../../../../../types';
 import { VALIDATE_UPDATE_CURRENT_USER } from '../../../../../model/validations';
 import TextField from '../../../common/TextField';
